@@ -1,0 +1,21 @@
+dataset_name: "cifar10"
+dataset_path: "/home/adam/datasets/cifar10"
+log_dir: "/home/adam/checkpoints"
+
+model_name: "20201030_model_ver1"
+network_name: "resnet18"
+num_classes: 10
+pretrained_imagenet: False
+
+batch_size: 256
+num_epochs: 20
+learning_rate: 1e-4
+scheduler_step_size: 15
+weight_decay: 1e-4
+momentum: 0.9 # momentum for SGD
+use_cuda: True
+loss_type: "supervised" # can be supervised or unsupervised
+num_workers: 12
+log_frequency: 10 # How often to log in tensorboard during early phase (before 1st epoch)
+
+
